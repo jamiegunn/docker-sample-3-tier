@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  APP_NAME: process.env['APP_NAME'] || 'DEF_A'
+  APP_NAME: process.env['APP_NAME'] || 'Local - No Container'
 };
 
 /*
