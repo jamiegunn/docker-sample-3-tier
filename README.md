@@ -25,7 +25,7 @@ It is composed of 3 parts:
 5. Open up Workbench
 6. Create Employee Schema - `CREATE DATABASE "employee-schema" /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;`
 6. Create Table Called Employee 
-'CREATE TABLE "employee-schema"."employee" (
+`CREATE TABLE "employee-schema"."employee" (
   "emp_id" INT(11) NOT NULL,
   "first_name" VARCHAR(45) NULL,
   "last_name" VARCHAR(45) NULL,
