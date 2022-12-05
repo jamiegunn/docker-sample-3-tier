@@ -1,6 +1,6 @@
 ## Technical Details
 
-Spring / Maven / Java 19
+MySQL 8
 
 ## Dependency
 

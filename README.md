@@ -15,7 +15,7 @@ It is composed of 3 parts:
 1. MS Windows
 2. Docker Desktop
 2. Docker Compose
-3. MySQL Workbench
+3. [Workbench](https://www.mysql.com/products/workbench/)
 4. Postman
 5. NPM
 
@@ -35,7 +35,7 @@ It is composed of 3 parts:
 6. [Create Table Called Employee](main/docker-mysql-8/create-table.sql) 
 7. Open up Postman, do a GET on `http://localhost:8080/api/employees/` -- The results should be `[]`.  This tests connectivity to the DB via the Spring/Maven backend.
 8. Open up the browser to:  `http://localhost:3000` -- This will show end to end connectivity, no employees, and show an environment variable being used.  
-9. Open up Workbench, and add a record or two to the Employee Table
+6. [Create Some Data](main/docker-mysql-8/create-data.sql) 
 
 ## Run the application
 
