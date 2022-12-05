@@ -6,8 +6,8 @@ This application has only been tested on Windows 10/11.  It may work on other OS
 
 It is composed of 3 parts:
 
-1. Angular 14 front-end - See the docker-sample-angular folder
-2. Spring / Maven back-end - See the springboot-crud folder
+1. [Angular 14 front-end](docker-sample-angular) - See the docker-sample-angular folder
+2. [Spring / Maven back-end](springboot-crud) - See the springboot-crud folder
 3. MySQL 8 database server
 
 ## Dependencies
@@ -18,6 +18,9 @@ It is composed of 3 parts:
 3. MySQL Workbench
 4. Postman
 5. NPM
+
+## Architecture
+[Architecture](assets/architecture.png)
 
 ## First Time Process to run the application
 
