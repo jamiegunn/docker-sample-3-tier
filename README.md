@@ -2,15 +2,18 @@
 
 This is a sample project to create and deploy a dockerized 3 tier application.  It is NOT production ready and should not be considered to be production code. It is purely to demonstrate the build / deploy of dockerized applications.  
 
+This application has only been tested on Windows 10/11.  It may work on other OS's but no guarantee.  
+
 It is composed of 3 parts:
 
-1. Angular 14 front-end
-2. Spring / Maven back-end
+1. Angular 14 front-end - See the docker-sample-angular folder
+2. Spring / Maven back-end - See the springboot-crud folder
 3. MySQL 8 database server
 
 ## Dependencies
 
-1. Docker Desktop
+1. MS Windows
+2. Docker Desktop
 2. Docker Compose
 3. MySQL Workbench
 4. Postman
@@ -18,6 +21,7 @@ It is composed of 3 parts:
 
 ## First Time Process to run the application
 
+0. `git clone ` the application down
 1. `docker compose up -d`
 2. `docker exec -it docker-sample-3-tier-db-1 mysql -uroot -p`
 3. `update mysql.user set host = '%' where user='admin';`
