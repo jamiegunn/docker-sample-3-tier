@@ -24,18 +24,18 @@ It is composed of 3 parts:
 
 ## First Time Process to run the application
 
-0. `git clone ` the application down
-1. `docker compose up -d`
-2. `docker exec -it docker-sample-3-tier-db-1 mysql -uroot -p`
-3. `update mysql.user set host = '%' where user='admin';`
-4. `update mysql.user set host = '%' where user='root';`
-5. `docker restart docker-sample-3-tier-db-1`
-5. Open up Workbench
-6. [Create Employee Schema](main/docker-mysql-8/create-schema.sql)
-6. [Create Table Called Employee](main/docker-mysql-8/create-table.sql) 
-7. Open up Postman, do a GET on `http://localhost:8080/api/employees/` -- The results should be `[]`.  This tests connectivity to the DB via the Spring/Maven backend.
-8. Open up the browser to:  `http://localhost:3000` -- This will show end to end connectivity, no employees, and show an environment variable being used.  
-6. [Create Some Data](main/docker-mysql-8/create-data.sql) 
+1. `git clone ` the application down
+2. `docker compose up -d`
+3. `docker exec -it docker-sample-3-tier-db-1 mysql -uroot -p`
+4. `update mysql.user set host = '%' where user='admin';`
+5. `update mysql.user set host = '%' where user='root';`
+6. `docker restart docker-sample-3-tier-db-1`
+7. Open up Workbench
+8. [Create Employee Schema](blob/main/docker-mysql-8/create-schema.sql)
+9. [Create Table Called Employee](blob/main/docker-mysql-8/create-table.sql) 
+10. Open up Postman, do a GET on `http://localhost:8080/api/employees/` -- The results should be `[]`.  This tests connectivity to the DB via the Spring/Maven backend.
+11. Open up the browser to:  `http://localhost:3000` -- This will show end to end connectivity, no employees, and show an environment variable being used.  
+12. [Create Some Data](blob/main/docker-mysql-8/create-data.sql) 
 
 ## Run the application
 
