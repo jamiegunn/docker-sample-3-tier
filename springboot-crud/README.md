@@ -24,7 +24,7 @@ GET `/api/employees`
 
 ## Run locally
 
-`.\mvnw package spring-boot:run -Dspring-boot.run.arguments="--spring.datasource.username=root --spring.datasource.password=123456" && java -jar target\employee-0.0.1-SNAPSHOT.jar`
+`.\mvnw package spring-boot:run -Dspring-boot.run.arguments="--spring.datasource.username=root --spring.datasource.password=123456 --spring.datasource.url=jdbc:mysql://localhost:3306/employee-schema" && java -jar target\employee-0.0.1-SNAPSHOT.jar`
 
 ## Build Docker Image
 
@@ -32,11 +32,7 @@ GET `/api/employees`
 
 ## Run Docker Container
 
-`docker run -d --rm -p 8080:8080 --name backend -e spring.datasource.password=123456 -e spring.datasource.username=root -e spring.datasource.url=jdbc:mysql://localhost:3306/employee-schema dragonspears/docker-sample-spring`
-
-alternative
-
-`docker run -d --rm -p 8080:8080 --name backend -e spring.datasource.password=Buster4749! -e spring.datasource.username=admin -e spring.datasource.url=jdbc:mysql://host.docker.internal:3306/employee-schema dragonspears/docker-sample-spring`
+`docker run -d --rm -p 8080:8080 --name backend -e spring.datasource.password=123456 -e spring.datasource.username=admin -e spring.datasource.url=jdbc:mysql://host.docker.internal:3306/employee-schema dragonspears/docker-sample-spring`
 
 ## Set environment variables are located
 
