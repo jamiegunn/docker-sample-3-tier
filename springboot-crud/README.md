@@ -8,9 +8,9 @@ Spring / Maven / Java 19
 MySQL Schema / DB - employee-schema
 MySQL Table - employee
 
-1. [Create Employee Schema](main/docker-mysql-8/create-schema.sql)
-2. [Create Table Called Employee](main/docker-mysql-8/create-table.sql) 
-3. [Create Some Data](main/docker-mysql-8/create-data.sql) 
+1. [Create Employee Schema](docker-mysql-8/create-schema.sql)
+2. [Create Table Called Employee](docker-mysql-8/create-table.sql) 
+3. [Create Some Data](docker-mysql-8/create-data.sql) 
 
 ## Default Functional Capability
 
