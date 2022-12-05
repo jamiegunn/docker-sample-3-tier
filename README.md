@@ -31,15 +31,8 @@ It is composed of 3 parts:
 4. `update mysql.user set host = '%' where user='root';`
 5. `docker restart docker-sample-3-tier-db-1`
 5. Open up Workbench
-6. Create Employee Schema - `CREATE DATABASE 'employee-schema' /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;`
-6. Create Table Called Employee 
-`CREATE TABLE 'employee-schema'.'employee' (
-  'emp_id' INT(11) NOT NULL,
-  'first_name' VARCHAR(45) NULL,
-  'last_name' VARCHAR(45) NULL,
-  'email_id' VARCHAR(45) NULL,
-  PRIMARY KEY ('emp_id'));
-`
+6. [Create Employee Schema](docker-mysql-8/create-schema.sql)]
+6. [Create Table Called Employee](docker-mysql-8/create-table.sql) 
 7. Open up Postman, do a GET on `http://localhost:8080/api/employees/` -- The results should be `[]`.  This tests connectivity to the DB via the Spring/Maven backend.
 8. Open up the browser to:  `http://localhost:3000` -- This will show end to end connectivity, no employees, and show an environment variable being used.  
 9. Open up Workbench, and add a record or two to the Employee Table
